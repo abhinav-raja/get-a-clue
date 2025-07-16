@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: #61c433;
+    --dark-green: #002017;
+    --mint-white: #f7ede2;
+}
