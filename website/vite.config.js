@@ -14,6 +14,7 @@ const toolHtmlFiles = fs
   }, {});
 
 export default defineConfig({
+  base: "/get-a-clue/",
   plugins: [svelte()],
   build: {
     rollupOptions: {
