@@ -4,7 +4,8 @@
     let isOpen = $state(false);
   
     const links = tools.map(({ name, label }) => ({
-      href: `/tools/${name}.html`,
+      //incorporate the vite base url here
+      href: `${import.meta.env.BASE_URL}tools/${name}.html`,
       label
     }));
   
@@ -15,7 +16,7 @@
 
 <link href="./app.css" rel="stylesheet"> 
 <nav class="navbar-container">
-    <a href="/index.html" class="navbar-content" aria-label="home">
+    <a href={`${import.meta.env.BASE_URL}index.html`} class="navbar-content" aria-label="home">
         <span class="home-icon"></span>
     </a>
     <button onclick={toggleClueDropdown} class="navbar-content" aria-label="clue types">

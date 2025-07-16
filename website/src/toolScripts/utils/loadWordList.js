@@ -1,4 +1,3 @@
-import fs from 'fs';
 import {data as wordMasks} from '../data/wordList.js'
 
 export function loadWordList() {
